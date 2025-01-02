@@ -1,0 +1,85 @@
+.bookmarks-container {
+    padding: 20px;
+  }
+  
+  .bookmark-item {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .bookmark-image {
+    width: 100%;
+    border-radius: 5px;
+  }
+  #stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 50px;
+    
+  }
+  
+  #story-card {
+    width: 257px;
+    height: 320px;
+    top: 487px;
+    left: 43px;
+  background: #000000;
+  
+  
+  }
+  
+  #storyimg {
+   
+    object-fit: cover;
+    border-radius: 10px;
+    width: 257px;
+  height: 459px;
+  /* top: 487px;
+  left: 43px; */
+  
+  
+  
+  }
+  
+  #story-card h3 {
+    margin-top: 15px;
+    font-size: 18px;
+    width: 196.01px;
+  height: 19.04px;
+  top: 851.6px;
+  left: 62.36px;
+    color: #FFFFFF;
+    margin-top: 200px;
+  margin-left: 20px;
+  }
+  
+  #story-card p {
+    font-size: 14px;
+    color: #FFFFFF;
+    width: 188.56px;
+  height: 35.52px;
+  top: 876.8px;
+  left: 63.38px;
+  margin-left: 20px;
+  
+  }
+  
+  @media (max-width: 768px) {
+    .bookmarks-container {
+        padding: 15px; /* Reduced padding for mobile */
+    }
+  
+    .bookmark-item {
+        margin: 8px 0; /* Reduced margin for smaller screens */
+        padding: 8px; /* Adjusted padding */
+    }
+  
+    .bookmark-image {
+        height: auto; /* Ensure image height adjusts automatically */
+    }
+  }

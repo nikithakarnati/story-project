@@ -1,0 +1,403 @@
+/* Modal Container */
+#storycontainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark background overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  #storycontainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('C:\Users\karna\Downloads\impfiles\impfiles\september\final_eval\client\public\bg1.png'); /* Add your image path here */
+    background-size: cover; /* Make sure the background covers the whole page */
+    filter: blur(5px); /* Apply the blur effect */
+    z-index: 1; /* Place it behind the content */
+  }
+  #storycontent {
+    background: #fff;
+  
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    width: 700px;
+  height: 580px;
+  top: 133px;
+  left: 325px;
+  border-radius: 20px 20px 20px 20px;
+  left: 7px;
+  top: 20px;
+  
+  }
+  
+  /* Close Button */
+  #closebtn{
+    margin-left: 650px;
+    cursor: pointer;
+  
+  }
+  
+  /* Slide Navigation */
+  #slide-navigation {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+    
+  
+  }
+  #active-slide-btn :hover{
+    border: 2px solid #73ABFF;
+  }
+  #slide-nav-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  #active-slide-btn {
+    background-color: #ff4d4d;
+    color: white;
+    width: 83.87px;
+  height: 68.09px;
+  top: 204px;
+  left: 366px;
+  border-radius: 10px 10px 10px 10px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 15px 0px #0000001A;
+  border :none;
+  font-family: DM Sans;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19.53px;
+  text-align: center;
+  color : #000000;
+  
+  }
+  
+  #add-slide-btn, .active-slide-btn, .delete-slide-btn {
+    padding: 8px 12px;
+    border-radius: 4px;
+    background: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s ease;
+  }
+  
+  #add-slide-btn:hover, #delete-slide-btn:hover {
+    background-color: #ff4d4d;
+    color: #fff;
+  }
+  
+  /* Delete Slide Button */
+  #delete-slide-btn {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #333;
+    background: #ff4d4d;
+    border: none;
+    border-radius: 50%;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
+  
+  #delete-slide-btn:hover {
+    background: #ff1a1a;
+    color: #fff;
+  }
+  
+  /* Form for Slide Content */
+  #slide-form {
+    margin-bottom: 20px;
+  }
+  
+  #slide-form label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* #slide-form input, .slide-form select, .slide-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  } */
+  
+  #slide-form textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  #slide-form input:focus, .slide-form select:focus, .slide-form textarea:focus {
+    border-color: #ff4d4d;
+    outline: none;
+  }
+  
+  /* Bottom Buttons Section */
+  #button-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* #button-section button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 14px;
+  } */
+  
+  #button-section button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* #button-section button:hover:not(:disabled) {
+    background: #e53e3e;
+  } */
+  
+  /* Add Button */
+  #add-slide-btn {
+   
+    width: 83.87px;
+    height: 68.09px;
+    top: 204px;
+    left: 366px;
+    border-radius: 10px 10px 10px 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px 0px #0000001A;
+    border :none;
+    font-family: DM Sans;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 19.53px;
+    text-align: center;
+    color : #000000;
+  
+  }
+  
+  #add-slide-btn:hover {
+    background: #e53e3e;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .add-story-content {
+      width: 90%;
+    }
+  
+    #slide-form input, .slide-form select, .slide-form textarea {
+      font-size: 12px;
+    }
+  
+    #button-section button {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+  }
+  #headng{
+    font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.44px;
+  text-align: left;
+  color : #000000;
+  
+  }
+  #heading{
+    width: 270.37px;
+  height: 39.07px;
+  top: 305.38px;
+  left: 552.09px;
+  border: 1px 1px 1px 1px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  margin-left: 300px;
+  font-family: DM Sans;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19.53px;
+  text-align: center;
+  color: #474141;
+  
+  }
+  #description{
+    width: 270.37px;
+  height: 104.92px;
+  top: 364px;
+  left: 552.09px;
+  border: 1px 1px 1px 1px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  font-family: DM Sans;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19.53px;
+  text-align: center;
+  color: #474141;
+  margin-left: 300px;
+  padding-top: 10px;
+  }
+  #imgurl{
+  width: 270.37px;
+  height: 39.07px;
+  top: 488px;
+  left: 551.29px;
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  font-family: DM Sans;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19.53px;
+  text-align: center;
+  color: #474141;
+  margin-left: 300px;
+  }
+  #category{
+  width: 270.37px;
+  height: 39.07px;
+  top: 546px;
+  left: 552.09px;
+  gap: 0px;
+  border: 1px 1px 1px 1px;
+  opacity: 0px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  font-family: DM Sans;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 19.53px;
+  text-align: center;
+  color: #474141;
+  margin-left: 300px;
+  }
+  #prebtn{
+  width: 115.87px;
+  height: 41.3px;
+  top: 601.8px;
+  left: 390.11px;
+  border-radius: 20px 20px 20px 20px;
+  background: #7EFF73;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.44px;
+  text-align: center;
+  color : #FFFFFF;
+  border:none;
+    margin-left: 100px;
+  
+  }
+  #nxt{
+  width: 115.87px;
+  height: 41.3px;
+  top: 601.8px;
+  left: 511.5px;
+  border-radius: 20px 20px 20px 20px;
+  background: #73ABFF;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.44px;
+  text-align: center;
+  color : #FFFFFF;
+  border:none;
+  margin-right: 200px;
+  
+  }
+  #post-btn{
+  width: 115.87px;
+  height: 41.3px;
+  top: 601.8px;
+  left: 848.09px;
+  border-radius: 20px 20px 20px 20px;
+  background: #FF7373;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.44px;
+  text-align: center;
+  color : #FFFFFF;
+  border: none;
+  }
+  @media (max-width: 768px) {
+  #storycontent {
+    width: 90%; /* Adjusted width for mobile */
+    height: auto; /* Allow height to adjust automatically */
+    padding: 15px; /* Reduced padding for smaller screens */
+    margin: 10px; /* Margin for mobile */
+  }
+  
+  #closebtn {
+    margin-left: auto; /* Move close button to the right */
+  }
+  
+  #slide-navigation {
+    flex-wrap: wrap; /* Wrap slide navigation items */
+  }
+  
+  #slide-form input,
+  #slide-form select,
+  #slide-form textarea {
+    width: 100%; /* Full width inputs on mobile */
+    font-size: 14px; /* Adjust font size for readability */
+  }
+  
+  #button-section {
+    flex-direction: column; /* Stack buttons vertically on mobile */
+    align-items: stretch; /* Stretch buttons to full width */
+  }
+  
+  #button-section button {
+    width: 100%; /* Full width buttons */
+    margin-bottom: 10px; /* Space between buttons */
+  }
+  
+  #heading,
+  #description,
+  #imgurl,
+  #category {
+    width: 100%; /* Full width inputs on mobile */
+    margin-left: 0; /* Remove left margin */
+  }
+  
+  #imgurl,
+  #category {
+    opacity: 1; /* Make select visible */
+  }
+  
+  /* Heading and label adjustments */
+  #headng {
+    font-size: 16px; /* Slightly smaller font size for mobile */
+  }
+  
+  /* Navigation buttons */
+  #prebtn,
+  #nxt,
+  #post-btn {
+    width: auto; /* Auto width for buttons */
+    padding: 10px; /* Padding adjustment */
+    font-size: 16px; /* Adjust font size */
+  }
+  }

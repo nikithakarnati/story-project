@@ -1,0 +1,181 @@
+#container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* To prevent scrolling if the image is larger than the page */
+  }
+  
+  #container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('C:\Users\karna\Downloads\impfiles\impfiles\september\final_eval\client\public\bg.png'); /* Add your image path here */
+    background-size: cover; /* Make sure the background covers the whole page */
+    filter: blur(5px); /* Apply the blur effect */
+    z-index: 1; /* Place it behind the content */
+  }
+  
+  #box {
+    position: relative;
+    z-index: 2; /* Ensure the form is above the background */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for the form */
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 624px;
+  height: 482px;
+  border-radius: 20px 20px 20px 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 30px 0px #FFFFFF40;
+  left: 20px;
+  top: 30px;
+  
+  }
+  #reg{
+    font-family: DM Sans;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 32.55px;
+  text-align: center;
+  color: hsl(0, 0%, 0%);
+  margin-top: 30px;
+  
+  }
+  #close{
+    margin-left: 570px;
+    cursor: pointer;
+  
+  }
+  #user{
+    font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26.04px;
+  text-align: left;
+  color : #000000;
+  margin-top: 30px;
+  
+  
+  }
+  #pass{
+    font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26.04px;
+  text-align: left;
+  color : #000000;
+  margin-top: 30px;
+  
+  }
+  
+  .input-field {
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+  
+  .input-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  
+  }
+  
+  .input-field input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15.62px;
+  text-align: center;
+  color : #8E8E8E;
+  background: #FFFFFF;
+  width: 245px;
+  height: 35px;
+  top: 402px;
+  left: 608px;
+  gap: 0px;
+  border: 1px 1px 1px 1px;
+  opacity: 0px;
+  
+  
+  }
+  
+  #regbtn {
+    background-color: #007bff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.44px;
+  text-align: center;
+  width: 129px;
+  height: 45px;
+  top: 581px;
+  left: 568px;
+  border-radius: 20px 20px 20px 20px;
+  background: #73ABFF;
+  margin-top: 20px;
+  }
+  
+  #auth-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  #error-msg {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+  #box {
+      width: 90%; /* Full width on mobile */
+      height: auto; /* Auto height */
+      padding: 20px; /* Adjust padding */
+  }
+  
+  #reg {
+      font-size: 22px; /* Smaller title */
+  }
+  
+  #close {
+      margin-left: 0; /* Adjust close button for mobile */
+      text-align: right; /* Align close button */
+  }
+  
+  #user, #pass {
+      font-size: 18px; /* Smaller labels */
+  }
+  
+  .input-field {
+      margin-left: 0; /* Center input fields */
+      margin-right: 0; /* Center input fields */
+  }
+  
+  .input-field input {
+      width: 100%; /* Full width for input fields */
+  }
+  
+  #regbtn {
+      width: 100%; /* Full width for button */
+  }
+  }

@@ -1,0 +1,210 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  #homepage {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  #header {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 73px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  #register-btn, #login-btn {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    border: none;
+    width: 136px;
+    height: 45px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+  }
+  
+  #register-btn {
+    background-color: #ff7373;
+  }
+  
+  #login-btn {
+    background-color: #73abff;
+  }
+  
+  #register-btn:hover, #login-btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* Image Section */
+  .image-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .image-box {
+    margin: 0 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+  
+  .image-box img {
+    width: 235px;
+    height: 235px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .image-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .image-box:hover img {
+    border: 2px solid #00f; /* Blue border on hover */
+  }
+  
+  /* Text Overlay on Images */
+  #text1, #text2, #text3, #text4, #text5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
+    padding: 10px 20px;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+  
+  /* Stories Section */
+  #stories-section {
+    margin-top: 50px;
+    padding: 20px;
+  }
+  .stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 100px;
+    margin-bottom: 50px;
+    
+  }
+  .story-card {
+    /* width: 257px;
+    height: 400px;
+    top: 487px;
+    left: 43px;
+  background: #000000;
+  border-radius: 10px; */
+  width: 350px;
+  height: 800px;
+  top: 485px;
+  left: 43px;
+  gap: 0px;
+  opacity: 0px;
+  background: #000000;
+  border-radius: 10px; 
+  
+  
+  }
+  .storyimg {
+    object-fit: cover;
+    border-radius: 10px;
+    width: 250px;
+  height: 250px; 
+  position: relative;
+  bottom: 400px;
+  
+  
+  } 
+  ul {
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Optional: Removes default padding */
+    margin: 0; /* Optional: Removes default margin */
+  }
+  
+  .story-card h3 {
+    font-size: 25px;
+    width: 196.01px;
+  height: 19.04px;
+  top: 851.6px;
+  left: 62.36px;
+    color: #FFFFFF;
+    margin-top: 300px;
+  margin-left: 20px;
+  text-align: center;
+  }
+  
+  .story-card p {
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 188.56px;
+  height: 35.52px;
+  top: 500px;
+  left: 63.38px;
+  margin-left: 20px;
+  text-align: center;
+  
+  
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #8e8e8e;
+    margin-top: 50px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .image-section {
+      flex-direction: column;
+    }
+  
+    .image-box {
+      margin-bottom: 20px;
+    }
+  
+    #register-btn, #login-btn {
+      width: 120px;
+      height: 40px;
+      font-size: 16px;
+    }
+  
+    h2 {
+      font-size: 26px;
+    }
+  
+    p {
+      font-size: 18px;
+    }
+  }
+  
